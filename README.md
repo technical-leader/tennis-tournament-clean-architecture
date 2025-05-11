@@ -53,8 +53,9 @@ El proyecto se organiza de la siguiente manera siguiendo **Clean Architecture**:
    ├── 📁 Documentation/            # Documentación técnica y diagramas
    ├── 📁 Tools/                    # Scripts de automatización y validación
    ├── 📄 README.md                 # Documentación principal
-   ├── 📄 .gitignore                 # Archivos ignorados por Git
-   ├── 📄 LICENSE                    # Licencia del repositorio
+   ├── 📄 .gitignore                # Archivos ignorados por Git
+   ├── 📄 LICENSE                   # Licencia del repositorio
+   ├── 📄 CONTRIBUTING              # Documentación marco para contribuir
 ```
 ✅ **Nuevo directorio `Documentation/`** para diagramas UML y análisis.  
 ✅ **Nuevo directorio `Tools/`** para scripts de soporte.  
