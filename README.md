@@ -112,3 +112,4 @@ La documentación técnica se encuentra en `Documentation/`, donde puedes consul
 ✅ Reportes de errores y mejoras pueden enviarse vía **Issues** en GitHub.  
 
 ---
+Cambio temporal para validar PR
