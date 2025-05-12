@@ -2,9 +2,10 @@
 
 ## **Nota importante :** _este repositorio esta en desarrollo, se estima ser liberado el lunes 19 de mayo del 2025_
 
-1. Inicialmente el desarrollo se vera reflejado en la rama del repositirio: https://github.com/technical-leader/tennis-tournament-clean-architecture/tree/feature/simulacion-torneo
-2. La primera acción fue dar respuesta al _modelar el comportamiento de un torneo de tenis_
-3. La segunda acción va a ser la implementación de la solución en conjunto a los puntos extras.
+1. Inicialmente, el desarrollo se verá reflejado en la rama del repositorio: https://github.com/technical-leader/tennis-tournament-clean-architecture/tree/feature/simulacion-torneo
+2. La primera acción fue dar respuesta a la consigna: _modelar el comportamiento de un torneo de tenis_
+3. La segunda acción será la implementación de la solución en conjunto a los puntos extras.
+4. Bajo metodología gitflow el desarrollo inicial se hace bajo la rama `feature/simulacion-torneo` luego pasara a la rama `develop` para por ultimo terminar en `main`.
 
 ---
 
