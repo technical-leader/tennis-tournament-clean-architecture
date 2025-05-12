@@ -10,7 +10,7 @@ _**Nota:** Además se agrega información sobre entorno, herramientas y miscelá
 4. Modelado de Objetos del Dominio
 5. Algoritmo de Simulación
 6. Modelo de Datos Propuesto
-7. Presentación sobre posibles alternativa al modelado de objetos
+7. Presentación sobre posibles alternativas al modelado de objetos
 8. Validaciones y Reglas de Negocio
 9. Patrones de Diseño Relevantes y Justificación
 10. Endpoints Principales de la API
@@ -189,7 +189,7 @@ erDiagram
 
 _El diagrama refleja el modelo que se espera implementar, incluyendo las entidades principales, sus atributos y las relaciones (uno a muchos, muchos a muchos y uno a uno) entre ellas. Estará alineada con la implementación y las migraciones de base de datos a realizar en la solución._
 
-## 7. Presentación sobre posibles alternativa al modelado de objetos
+## 7. Presentación sobre posibles alternativas al modelado de objetos
 
 | Aspecto                  | Modelo a desarrollar                                               | Modelo alternativo                                                                | Comentario                                                                                                                              |
 | ------------------------ | ------------------------------------------------------------------ | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
@@ -207,7 +207,7 @@ _El diagrama refleja el modelo que se espera implementar, incluyendo las entidad
 
 - El modelo a implementar mantiene los cálculos dentro de las clases (`Jugador`), mientras que el alternativo usa un **patrón Strategy** para definir cómo influyen habilidad, suerte y atributos adicionales.
 - La persistencia en el modelo a implementar está enfocada en SQL Server con Entity Framework, mientras que en el alternativo se propondría **Event Sourcing** para hacer el historial más dinámico.
-- En la API, se usaría **CQRS y MediatR**, lo que es excelente para desacoplar consultas de modificaciones. El modelo alternatico plantea añadir una **Factoría (`MatchSimulationStrategyFactory`)** para crear estrategias según el torneo.
+- En la API, se usaría **CQRS y MediatR**, lo que es excelente para desacoplar consultas de modificaciones. El modelo alternativo plantea añadir una **Factoría (`MatchSimulationStrategyFactory`)** para crear estrategias según el torneo.
 
 ## 8. Validaciones y Reglas de Negocio
 
@@ -245,7 +245,7 @@ _El diagrama refleja el modelo que se espera implementar, incluyendo las entidad
 ## 12. Definición y menciones sobre el entorno de desarrollo y misceláneos
 
 - Se trabaja sobre un Windows 11 Pro (64bit)
-- Se enmplea como EDI al Vsual Studio Code
+- Se emplea como EDI al Visual Studio Code
   - Se utilizan los siguientes compontes relacionados al desarrollo
     - Markdown All in One
     - Mermaid Chart
@@ -262,7 +262,7 @@ _El diagrama refleja el modelo que se espera implementar, incluyendo las entidad
     - SQL Server 2022
     - nginx slim
   - Docker Compose
-    - La persistencia de datos y configuración en momento de ejecucioón de los contenedores se deposita en el host via la definicion de volumens.
+    - La persistencia de datos y configuración en momento de ejecución de los contenedores se deposita en el host vía la definición de `volumens`.
 - Power Shell Core 7.x
 - SSL - OpenSSL / mkcert
 - Scriptings de validación (ps1) sobre conf y servicios
