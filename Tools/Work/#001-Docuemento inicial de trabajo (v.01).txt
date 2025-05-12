@@ -1,3 +1,4 @@
+# Corrida para la definición de la solución
 
 PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture> dir
 
