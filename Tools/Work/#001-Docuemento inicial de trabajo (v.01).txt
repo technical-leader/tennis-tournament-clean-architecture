@@ -1,0 +1,207 @@
+
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture> dir
+
+    Directory: C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          11/05/2025    21:21            984 .gitignore
+-a---          11/05/2025    21:21           3419 CONTRIBUTING.md
+-a---          11/05/2025    21:21           1094 LICENSE
+-a---          11/05/2025    21:53           4659 README.md
+
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture> mkdir src
+
+    Directory: C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          11/05/2025    22:18                src
+
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture> mkdir Documentation          
+
+    Directory: C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          11/05/2025    22:19                Documentation
+
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture> mkdir Tools                  
+
+    Directory: C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          11/05/2025    22:19                Tools
+
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture> 
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture> ls
+
+    Directory: C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          11/05/2025    22:19                Documentation
+d----          11/05/2025    22:18                src
+d----          11/05/2025    22:19                Tools
+-a---          11/05/2025    21:21            984 .gitignore
+-a---          11/05/2025    21:21           3419 CONTRIBUTING.md
+-a---          11/05/2025    21:21           1094 LICENSE
+-a---          11/05/2025    21:53           4659 README.md
+
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture> git add src Documentation Tools
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture> git commit -m "feat: Creación de estructura base con src, Documentation y Tools"
+On branch feature/simulacion-torneo
+Your branch is up to date with 'origin/feature/simulacion-torneo'.
+
+nothing to commit, working tree clean
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture> git push
+Enter passphrase for key '/c/Users/Belg/.ssh/id_ed25519': 
+Everything up-to-date
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture> echo "Placeholder file" > src/.gitkeep
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture> echo "Placeholder file" > Documentation/.gitkeep
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture> echo "Placeholder file" > Tools/.gitkeep
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture> git add src Documentation Tools     
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture> git commit -m "feat: Creación de estructura base con src, Documentation y Tools"
+[feature/simulacion-torneo 39a8f72] feat: Creación de estructura base con src, Documentation y Tools
+ 3 files changed, 3 insertions(+)
+ create mode 100644 Documentation/.gitkeep
+ create mode 100644 Tools/.gitkeep
+ create mode 100644 src/.gitkeep
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture> git push
+Enter passphrase for key '/c/Users/Belg/.ssh/id_ed25519':
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 528 bytes | 528.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:technical-leader/tennis-tournament-clean-architecture.git
+   1a4a440..39a8f72  feature/simulacion-torneo -> feature/simulacion-torneo
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture> dir
+
+    Directory: C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          11/05/2025    22:22                Documentation
+d----          11/05/2025    22:22                src
+d----          11/05/2025    22:22                Tools
+-a---          11/05/2025    21:21            984 .gitignore
+-a---          11/05/2025    21:21           3419 CONTRIBUTING.md
+-a---          11/05/2025    21:21           1094 LICENSE
+-a---          11/05/2025    22:33           4732 README.md
+
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture> cd src
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src> dotnet new sln -n TennisTournament
+La plantilla "Archivo de la solución" se creó correctamente.
+
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src> dotnet new classlib -n TennisTournament.Domain        
+La plantilla "Biblioteca de clases" se creó correctamente.
+
+Procesando acciones posteriores a la creación...
+Restaurando C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src\TennisTournament.Domain\TennisTournament.Domain.csproj:
+Restauración realizada correctamente.
+
+
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src> dotnet new classlib -n TennisTournament.Application
+La plantilla "Biblioteca de clases" se creó correctamente.
+
+Procesando acciones posteriores a la creación...
+Restaurando C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src\TennisTournament.Application\TennisTournament.Application.csproj:
+Restauración realizada correctamente.
+
+
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src> dotnet new classlib -n TennisTournament.Infrastructure
+La plantilla "Biblioteca de clases" se creó correctamente.
+
+Procesando acciones posteriores a la creación...
+Restaurando C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src\TennisTournament.Infrastructure\TennisTournament.Infrastructure.csproj:
+Restauración realizada correctamente.
+
+
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src> dotnet new webapi -n TennisTournament.API
+La plantilla "ASP.NET Core Web API" se creó correctamente.
+
+Procesando acciones posteriores a la creación...
+Restaurando C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src\TennisTournament.API\TennisTournament.API.csproj:
+Restauración realizada correctamente.
+
+
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src> dotnet new xunit -n TennisTournament.Tests.Unit       
+La plantilla "Proyecto de prueba de xUnit" se creó correctamente.
+
+Procesando acciones posteriores a la creación...
+Restaurando C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src\TennisTournament.Tests.Unit\TennisTournament.Tests.Unit.csproj:
+Restauración realizada correctamente.
+
+
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src> dotnet new xunit -n TennisTournament.Tests.Integration
+La plantilla "Proyecto de prueba de xUnit" se creó correctamente.
+
+Procesando acciones posteriores a la creación...
+Restaurando C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src\TennisTournament.Tests.Integration\TennisTournament.Tests.Integration.csproj:
+Restauración realizada correctamente.
+
+
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src> dotnet sln add TennisTournament.Domain/TennisTournament.Domain.csproj
+Se ha agregado el proyecto "TennisTournament.Domain\TennisTournament.Domain.csproj" a la solución.
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src> dotnet sln add TennisTournament.Application/TennisTournament.Application.csproj
+Se ha agregado el proyecto "TennisTournament.Application\TennisTournament.Application.csproj" a la solución.
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src> dotnet sln add TennisTournament.Infrastructure/TennisTournament.Infrastructure.csproj
+Se ha agregado el proyecto "TennisTournament.Infrastructure\TennisTournament.Infrastructure.csproj" a la solución.
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src> dotnet sln add TennisTournament.API/TennisTournament.API.csproj
+Se ha agregado el proyecto "TennisTournament.API\TennisTournament.API.csproj" a la solución.
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src> dotnet sln add TennisTournament.Tests.Unit/TennisTournament.Tests.Unit.csproj
+Se ha agregado el proyecto "TennisTournament.Tests.Unit\TennisTournament.Tests.Unit.csproj" a la solución.
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src> dotnet sln add TennisTournament.Tests.Integration/TennisTournament.Tests.Integration.csproj
+Se ha agregado el proyecto "TennisTournament.Tests.Integration\TennisTournament.Tests.Integration.csproj" a la solución.
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src> 
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src> 
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src> cd TennisTournament.Application
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src\TennisTournament.Application> dotnet add reference ../TennisTournament.Domain/TennisTournament.Domain.csproj
+Se ha agregado la referencia "..\TennisTournament.Domain\TennisTournament.Domain.csproj" al proyecto.
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src\TennisTournament.Application> cd ..
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src> 
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src> cd TennisTournament.Infrastructure
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src\TennisTournament.Infrastructure> dotnet add reference ../TennisTournament.Application/TennisTournament.Application.csproj
+Se ha agregado la referencia "..\TennisTournament.Application\TennisTournament.Application.csproj" al proyecto.
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src\TennisTournament.Infrastructure> dotnet add reference ../TennisTournament.Domain/TennisTournament.Domain.csproj
+Se ha agregado la referencia "..\TennisTournament.Domain\TennisTournament.Domain.csproj" al proyecto.
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src\TennisTournament.Infrastructure> cd ..
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src> 
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src> cd TennisTournament.API
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src\TennisTournament.API> dotnet add reference ../TennisTournament.Application/TennisTournament.Application.csproj
+Se ha agregado la referencia "..\TennisTournament.Application\TennisTournament.Application.csproj" al proyecto.
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src\TennisTournament.API> dotnet add reference ../TennisTournament.Domain/TennisTournament.Domain.csproj
+Se ha agregado la referencia "..\TennisTournament.Domain\TennisTournament.Domain.csproj" al proyecto.
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src\TennisTournament.API> dotnet add reference ../TennisTournament.Infrastructure/TennisTournament.Infrastructure.csproj
+Se ha agregado la referencia "..\TennisTournament.Infrastructure\TennisTournament.Infrastructure.csproj" al proyecto.
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src\TennisTournament.API> cd ..
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src> 
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src> cd TennisTournament.Tests.Unit
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src\TennisTournament.Tests.Unit> dotnet add reference ../TennisTournament.Domain/TennisTournament.Domain.csproj                
+Se ha agregado la referencia "..\TennisTournament.Domain\TennisTournament.Domain.csproj" al proyecto.
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src\TennisTournament.Tests.Unit> dotnet add reference ../TennisTournament.Application/TennisTournament.Application.csproj
+Se ha agregado la referencia "..\TennisTournament.Application\TennisTournament.Application.csproj" al proyecto.
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src\TennisTournament.Tests.Unit> dotnet add reference ../TennisTournament.Infrastructure/TennisTournament.Infrastructure.csproj
+
+Se ha agregado la referencia "..\TennisTournament.Infrastructure\TennisTournament.Infrastructure.csproj" al proyecto.
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src\TennisTournament.Tests.Unit> dotnet add reference ../TennisTournament.API/TennisTournament.API.csproj
+Se ha agregado la referencia "..\TennisTournament.Infrastructure\TennisTournament.Infrastructure.csproj" al proyecto.  
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src\TennisTournament.Tests.Unit> dotnet add reference ../TennisTournament.API/TennisTournament.API.csproj
+Se ha agregado la referencia "..\TennisTournament.API\TennisTournament.API.csproj" al proyecto.
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src\TennisTournament.Tests.Unit> cd ..
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src>
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src> cd TennisTournament.Tests.Integration
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src\TennisTournament.Tests.Integration> dotnet add reference ../TennisTournament.Domain/TennisTournament.Domain.csproj
+Se ha agregado la referencia "..\TennisTournament.Domain\TennisTournament.Domain.csproj" al proyecto.
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src\TennisTournament.Tests.Integration> dotnet add reference ../TennisTournament.Application/TennisTournament.Application.csproj    
+Se ha agregado la referencia "..\TennisTournament.Application\TennisTournament.Application.csproj" al proyecto.        
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src\TennisTournament.Tests.Integration> dotnet add reference ../TennisTournament.Infrastructure/TennisTournament.Infrastructure.csproj
+Se ha agregado la referencia "..\TennisTournament.Infrastructure\TennisTournament.Infrastructure.csproj" al proyecto.  
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src\TennisTournament.Tests.Integration> dotnet add reference ../TennisTournament.API/TennisTournament.API.csproj
+Se ha agregado la referencia "..\TennisTournament.API\TennisTournament.API.csproj" al proyecto.
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src\TennisTournament.Tests.Integration> cd ..
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src>
+PS C:\Desarrollo\Desa2025\MicroServicios\GeoPagos\ChallengeTechnical\tennis-tournament-clean-architecture\src>
