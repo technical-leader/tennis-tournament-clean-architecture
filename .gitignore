@@ -52,3 +52,7 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+# Ignorar archivos PDF
+Documentation/#001-Análisis y Diseño Conceptual del Sistema de Torneos de Tenis (v.01).pdf
+README.pdf
