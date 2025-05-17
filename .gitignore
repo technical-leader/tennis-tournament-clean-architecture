@@ -56,3 +56,10 @@ nunit-*.xml
 # Ignorar archivos PDF
 Documentation/#001-Análisis y Diseño Conceptual del Sistema de Torneos de Tenis (v.01).pdf
 README.pdf
+
+# Ignorar archivos 7z
+*.7z
+
+# Ignorar archivos con información sencible de la app
+appsettings.Development.json
+appsettings.json
