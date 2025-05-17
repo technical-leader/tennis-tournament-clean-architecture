@@ -1,6 +1,0 @@
-@TennisTournament.API_HostAddress = http://localhost:5269
-
-GET {{TennisTournament.API_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
