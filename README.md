@@ -37,11 +37,11 @@ Cuenta con una separación clara de capas, donde cada módulo cumple una respons
 
 ### **Extras abordados**:
 
-✅ **API Rest (Swagger)**  
-✅ **Testing Integration**
-✅ **Testing Unitario**
-✅ **Persistencia en SQL Server (EF Core, Migrations)**  
-✅ **Despliegue en contenedores (Docker Compose, Podman)**
+- **API Rest (Swagger)**
+- **Testing Integration**
+- **Testing Unitario**
+- **Persistencia en SQL Server (EF Core, Migrations)**
+- **Despliegue en contenedores (Docker Compose, Podman)**
 
 ---
 
