@@ -1,0 +1,47 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug TennisTournament",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build-api",
+      "program": "${workspaceFolder}/TennisTournament.API/bin/Debug/net9.0/TennisTournament.API.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/TennisTournament.API",
+      "console": "internalConsole",
+      "stopAtEntry": false,
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "internalConsoleOptions": "openOnSessionStart",
+      "justMyCode": false,
+      "symbolOptions": {
+        "searchMicrosoftSymbolServer": false
+      },
+      "logging": {
+        "moduleLoad": false
+      }
+    },
+    {
+      "name": "Run Tests",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build-test-unit",
+      "program": "${workspaceFolder}/TennisTournament.Tests.Unit/bin/Debug/net9.0/TennisTournament.Tests.Unit.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "stopAtEntry": false
+    },
+    {
+      "name": "Containers: .NET Launch",
+      "type": "docker",
+      "request": "launch",
+      "preLaunchTask": "docker-run: debug",
+      "netCore": {
+        "appProject": "${workspaceFolder}/TennisTournament.API/TennisTournament.API.csproj"
+      }
+    }
+  ]
+}

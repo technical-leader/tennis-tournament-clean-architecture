@@ -1,0 +1,77 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build-api",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/TennisTournament.API/TennisTournament.API.csproj"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "build-test-unit",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "test",
+        "${workspaceFolder}/TennisTournament.Tests.Unit/TennisTournament.Tests.Unit.csproj"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "type": "docker-build",
+      "label": "docker-build: debug",
+      "dependsOn": ["build"],
+      "dockerBuild": {
+        "tag": "challengetcnico:dev",
+        "target": "base",
+        "dockerfile": "${workspaceFolder}/TennisTournament.API/Dockerfile",
+        "context": "${workspaceFolder}",
+        "pull": true
+      },
+      "netCore": {
+        "appProject": "${workspaceFolder}/TennisTournament.API/TennisTournament.API.csproj"
+      }
+    },
+    {
+      "type": "docker-build",
+      "label": "docker-build: release",
+      "dependsOn": ["build"],
+      "dockerBuild": {
+        "tag": "challengetcnico:latest",
+        "dockerfile": "${workspaceFolder}/TennisTournament.API/Dockerfile",
+        "context": "${workspaceFolder}",
+        "platform": {
+          "os": "linux",
+          "architecture": "amd64"
+        },
+        "pull": true
+      },
+      "netCore": {
+        "appProject": "${workspaceFolder}/TennisTournament.API/TennisTournament.API.csproj"
+      }
+    },
+    {
+      "type": "docker-run",
+      "label": "docker-run: debug",
+      "dependsOn": ["docker-build: debug"],
+      "dockerRun": {},
+      "netCore": {
+        "appProject": "${workspaceFolder}/TennisTournament.API/TennisTournament.API.csproj",
+        "enableDebugging": true
+      }
+    },
+    {
+      "type": "docker-run",
+      "label": "docker-run: release",
+      "dependsOn": ["docker-build: release"],
+      "dockerRun": {},
+      "netCore": {
+        "appProject": "${workspaceFolder}/TennisTournament.API/TennisTournament.API.csproj"
+      }
+    }
+  ]
+}
