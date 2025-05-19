@@ -52,3 +52,26 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+# Ignorar archivos PDF
+Documentation/#001-Análisis y Diseño Conceptual del Sistema de Torneos de Tenis (v.01).pdf
+README.pdf
+
+# Ignorar archivos 7z
+*.7z
+
+# Ignorar archivos con información sencible de la app
+appsettings.Development.json
+appsettings.json
+
+# Docker specific
+# Archivos y carpetas generados por herramientas de Docker (ej. Visual Studio)
+**/obj/Docker/
+**/bin/Docker/
+
+# Archivos de Docker Compose que suelen ser locales y no deben versionarse
+docker-compose.override.yml
+
+# Posibles archivos de contexto de Docker si se generan localmente
+*.tar
+*.tar.gz

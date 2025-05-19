@@ -1,0 +1,82 @@
+{
+  "EnableTournamentSeed": true,
+  "Tournaments": [
+    {
+      "Enabled": true,
+      "Id": "b1a2c3d4-e5f6-7890-1234-abcdef010001",
+      "Type": "Male",
+      "StartDate": "2025-05-10T10:00:00",
+      "EndDate": "2025-05-15T18:00:00",
+      "Status": "Scheduled",
+      "Players": [
+        {
+          "Id": "11111111-1111-1111-1111-111111110001",
+          "Name": "Jugador 0001",
+          "SkillLevel": 95,
+          "Strength": 90,
+          "Speed": 85,
+          "PlayerType": "Male"
+        },
+        {
+          "Id": "11111111-1111-1111-1111-111111110002",
+          "Name": "Jugador 0002",
+          "SkillLevel": 98,
+          "Strength": 85,
+          "Speed": 95,
+          "PlayerType": "Male"
+        },
+        {
+          "Id": "11111111-1111-1111-1111-111111110003",
+          "Name": "Jugador 0003",
+          "SkillLevel": 91,
+          "Strength": 93,
+          "Speed": 92,
+          "PlayerType": "Male"
+        },
+        {
+          "Id": "11111111-1111-1111-1111-111111110004",
+          "Name": "Jugador 0004",
+          "SkillLevel": 90,
+          "Strength": 90,
+          "Speed": 97,
+          "PlayerType": "Male"
+        },
+        {
+          "Id": "11111111-1111-1111-1111-111111110005",
+          "Name": "Jugador 0005",
+          "SkillLevel": 95,
+          "Strength": 90,
+          "Speed": 85,
+          "PlayerType": "Male"
+        },
+        {
+          "Id": "11111111-1111-1111-1111-111111110006",
+          "Name": "Jugador 0006",
+          "SkillLevel": 98,
+          "Strength": 85,
+          "Speed": 95,
+          "PlayerType": "Male"
+        },
+        {
+          "Id": "11111111-1111-1111-1111-111111110007",
+          "Name": "Jugador 0007",
+          "SkillLevel": 91,
+          "Strength": 93,
+          "Speed": 92,
+          "PlayerType": "Male"
+        },
+        {
+          "Id": "11111111-1111-1111-1111-111111110008",
+          "Name": "Jugador 0008",
+          "SkillLevel": 90,
+          "Strength": 90,
+          "Speed": 97,
+          "PlayerType": "Male"
+        }
+      ]
+    }
+  ],
+  "OtherConfig": {
+    "EnableSomethingElse": false
+  }
+}
