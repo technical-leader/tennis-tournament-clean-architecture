@@ -124,10 +124,27 @@ if (app.Environment.IsDevelopment())
         c.InjectJavascript($"data:text/javascript;charset=utf-8,{Uri.EscapeDataString(swaggerScript)}");
     });
 
-    // Sembrar datos iniciales en la base de datos
+    // En el entorno de Desarrollo:
+    // 1. Aplicar migraciones automáticas.
+    // 2. Sembrar datos iniciales.    
     using (var scope = app.Services.CreateScope())
     {
         var services = scope.ServiceProvider;
+
+        // Ejecutar migraciones automáticas al iniciar la app SOLO en Desarrollo
+        var db = services.GetRequiredService<TournamentDbContext>(); // Reutilizamos 'services' del mismo scope
+        try
+        {
+            db.Database.Migrate(); // Aplica migraciones o crea la DB si no existe
+        }
+        catch (Exception ex)
+        {
+            var migrationLogger = services.GetRequiredService<ILogger<Program>>(); // O un logger más específico
+            migrationLogger.LogError(ex, "Error al aplicar migraciones en la base de datos durante el desarrollo.");
+            // Considera si quieres que la aplicación falle aquí en desarrollo o continúe
+        }
+
+        // Sembrar datos iniciales en la base de datos
         var context = services.GetRequiredService<TournamentDbContext>();
         var logger = services.GetRequiredService<ILogger<TournamentDbContextSeed>>();
 
@@ -140,13 +157,6 @@ if (app.Environment.IsDevelopment())
             logger.LogError(ex, "Error al sembrar datos iniciales en la base de datos");
         }
     }
-}
-
-// Ejecutar migraciones automáticas al iniciar la app
-using (var scope = app.Services.CreateScope())
-{
-    var db = scope.ServiceProvider.GetRequiredService<TournamentDbContext>();
-    db.Database.Migrate(); // Aplica migraciones o crea la DB si no existe
 }
 
 app.UseCors("DefaultPolicy");
