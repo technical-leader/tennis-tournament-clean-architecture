@@ -63,3 +63,15 @@ README.pdf
 # Ignorar archivos con información sencible de la app
 appsettings.Development.json
 appsettings.json
+
+# Docker specific
+# Archivos y carpetas generados por herramientas de Docker (ej. Visual Studio)
+**/obj/Docker/
+**/bin/Docker/
+
+# Archivos de Docker Compose que suelen ser locales y no deben versionarse
+docker-compose.override.yml
+
+# Posibles archivos de contexto de Docker si se generan localmente
+*.tar
+*.tar.gz
