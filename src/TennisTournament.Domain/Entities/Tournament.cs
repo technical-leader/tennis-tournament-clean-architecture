@@ -84,7 +84,8 @@ namespace TennisTournament.Domain.Entities
         /// Añade un jugador al torneo.
         /// </summary>
         /// <param name="player">Jugador a añadir.</param>
-        /// <exception cref="InvalidOperationException">Si el torneo ya ha comenzado o el jugador no es del tipo correcto.</exception>
+        /// <exception cref="InvalidOperationException">Si el torneo ya ha comenzado.</exception>
+        /// <exception cref="ArgumentException">Si el jugador no es del tipo correcto.</exception>
         /// <exception cref="ArgumentNullException">Si el jugador es nulo.</exception>
         public void AddPlayer(Player player)
         {
@@ -95,7 +96,7 @@ namespace TennisTournament.Domain.Entities
                 throw new ArgumentNullException(nameof(player));
 
             if (player.PlayerType != (PlayerType)Type)
-                throw new InvalidOperationException($"El jugador debe ser del tipo {Type}.");
+                throw new ArgumentException($"El jugador debe ser del tipo {Type}.", nameof(player));
 
             _players.Add(player);
         }
@@ -104,7 +105,8 @@ namespace TennisTournament.Domain.Entities
         /// Establece la lista de jugadores del torneo.
         /// </summary>
         /// <param name="players">Lista de jugadores.</param>
-        /// <exception cref="InvalidOperationException">Si el torneo ya ha comenzado, el número de jugadores no es potencia de 2, o los jugadores no son del tipo correcto.</exception>
+        /// <exception cref="InvalidOperationException">Si el torneo ya ha comenzado, el número de jugadores no es potencia de 2.</exception>
+        /// <exception cref="ArgumentException">Si los jugadores no son del tipo correcto.</exception>
         /// <exception cref="ArgumentNullException">Si la lista de jugadores es nula.</exception>
         public void SetPlayers(IEnumerable<Player> players)
         {
@@ -122,7 +124,7 @@ namespace TennisTournament.Domain.Entities
 
             // Verificar que todos los jugadores sean del tipo correcto según el torneo
             if (playersList.Any(p => p.PlayerType != (PlayerType)Type))
-                throw new InvalidOperationException($"Todos los jugadores deben ser del tipo {Type}.");
+                throw new ArgumentException($"Todos los jugadores deben ser del tipo {Type}.", nameof(players));
 
             _players = playersList;
         }
