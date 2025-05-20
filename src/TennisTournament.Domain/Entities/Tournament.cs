@@ -169,8 +169,8 @@ namespace TennisTournament.Domain.Entities
 
             // Verificar que los jugadores sean del tipo correcto según el torneo
             bool allPlayersValid = type == TournamentType.Male
-                ? players.All(p => p.PlayerType == PlayerType.Male)
-                : players.All(p => p.PlayerType == PlayerType.Female);
+                ? players.TrueForAll(p => p.PlayerType == PlayerType.Male)
+                : players.TrueForAll(p => p.PlayerType == PlayerType.Female);
 
             if (!allPlayersValid)
                 throw new ArgumentException($"Todos los jugadores deben ser del tipo {type}.", nameof(players));
