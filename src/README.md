@@ -13,13 +13,15 @@
 2. La estructura de los directorios de la solución es:
 
 ```
-  📁 TennisTournament/
+  📁 src/
      ├── 📁 TennisTournament.Domain/              # Modelado de entidades y lógica de negocio
      ├── 📁 TennisTournament.Application/         # Servicios y reglas de aplicación
      ├── 📁 TennisTournament.Infrastructure/      # Persistencia y adaptadores de datos
      ├── 📁 TennisTournament.API/                 # Exposición vía REST API
      ├── 📁 TennisTournament.Tests.Unit/          # Pruebas unitarias
      ├── 📁 TennisTournament.Tests.Integration/   # Pruebas de integración
+     ├── 📄 Dockerfile                            # Alta de imagen Docker
+     ├── 📄 README.md                             # Documentación principal
      ├── 📄 TennisTournament.sln                  # Solución de .NET 9 C#
 ```
 
