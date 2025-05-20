@@ -43,6 +43,7 @@ Documentos relacionados con la creación de imágenes Docker y la gestión de co
 Esta sección agrupa la documentación referente a las estrategias y ejemplos de pruebas unitarias (tu) y pruebas de integración (ti) implementadas.
 
 - `tu01-Estrategia de Pruebas Unitarias (v.01).md`
+- `tu02-ValidacionGeneroTorneo (v.01).md`
 - `ti01-Concepto General de Pruebas de Integración en DotNET con Clean Architecture (v01).md`
 - `ti02-lmplementación de Pruebas de Integración para API Endpoints (v01).md`
 - `ti03-Manejo de IDs en Pruebas de Integración (v01).md`
