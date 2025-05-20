@@ -1,14 +1,5 @@
 # tennis-tournament-clean-architecture
 
-## **Nota importante :** _este repositorio esta en desarrollo, se estima ser liberado el lunes 19 de mayo del 2025_
-
-1. Inicialmente, el desarrollo se verá reflejado en la rama del repositorio: https://github.com/technical-leader/tennis-tournament-clean-architecture/tree/feature/simulacion-torneo
-2. La primera acción fue dar respuesta a la consigna: _modelar el comportamiento de un torneo de tenis_
-3. La segunda acción será la implementación de la solución en conjunto a los puntos extras.
-4. Bajo metodología gitflow el desarrollo inicial se hace bajo la rama `feature/simulacion-torneo`. Luego pasará a la rama `develop` para por último, terminar en `main`.
-
----
-
 Este repositorio contiene la implementación de un **sistema de simulación de torneos de tenis por eliminación directa** siguiendo los principios de **Clean Architecture**, aplicando buenas prácticas de programación orientada a objetos y estructuración modular.
 
 ## **📌 Índice**
@@ -58,9 +49,16 @@ El proyecto se organiza de la siguiente manera siguiendo **Clean Architecture**:
    │    ├── 📁 TennisTournament.API/                 # Exposición vía REST API
    │    ├── 📁 TennisTournament.Tests.Unit/          # Pruebas unitarias
    │    ├── 📁 TennisTournament.Tests.Integration/   # Pruebas de integración
+   │    ├── 📄 Dockerfile           # Alta de imagen Docker
+   │    ├── 📄 README.md            # Documentación principal
    │    ├── 📄 TennisTournament.sln # Solución de .NET 9 C#
    │
    ├── 📁 Documentation/            # Documentación técnica y diagramas
+   │    ├── 📁 About Play/          # Documentación sobre la implementación
+   │    ├── 📁 About Refactors/     # Documentación sobre mejoras y correcciones
+   │    ├── 📁 Diagrams/            # Diagramas varios
+   │    ├── 📄 #001-Análisis y D... # Análisis y Diseño Conceptual
+   │
    ├── 📁 Tools/                    # Scripts de automatización y validación
    ├── 📄 README.md                 # Documentación principal
    ├── 📄 .gitignore                # Archivos ignorados por Git
